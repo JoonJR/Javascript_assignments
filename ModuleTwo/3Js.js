@@ -5,10 +5,10 @@ console.log(names)
 
 const list = document.getElementById("names");
 
-names.sort(); //sorts alphabetically
+names.sort();
 names.reverse()
 
-for (let i = 0; i < names.length; ++i) {  //prints in an ordered list to the web page
+for (let i = 0; i < names.length; ++i) {
   const li = document.createElement('li');
   li.innerText = names[i];
     list.appendChild(li);
