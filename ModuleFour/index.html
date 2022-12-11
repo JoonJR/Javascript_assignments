@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Module 4.</title>
+    <link href="styles.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Rubik+Vinyl&display=swap" rel="stylesheet">
+    <script src="js.js" defer></script>
+</head>
+<body>
+<h1>Search for TV shows!</h1>
+<dialog>
+      <nav>
+        <h2 id="modalTitle"></h2>
+        <div id="closeModel">&#10005;</div>
+      </nav>
+      <iframe name="details" height="700" width="800" title="More details"></iframe>
+    </dialog>
+    <form action="https://api.tvmaze.com/search/shows?">
+        <label for="query"></label><input id="query" name="q" type="text" placeholder="e.g Game of Thrones" autocomplete="off" spellcheck="false">
+      <input id="submit-button" type="submit" value="Search">
+    </form>
+    <div id="shows">
+      <p>No results</p>
+    </div>
+</body>
+</html>
